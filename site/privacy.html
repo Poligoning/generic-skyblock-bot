@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Generic Skyblock Bot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html" aria-current="page">Privacy Policy</a></nav>
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: November 3, 2026</p>
+
+<p>Generic Skyblock Bot (“the bot”) is built to collect as little as possible. This page explains what it handles and why.</p>
+
+<h2>What we don't store</h2>
+<p>The bot has no database. It does not save your Discord user ID, messages, server information or command history.</p>
+
+<h2>What the bot processes</h2>
+<ul>
+<li><strong>Command input.</strong> When you run a command, Discord sends the bot the command, its options (such as a Minecraft username or profile name) and basic details like your user ID, so it can reply and make sure only you can use the buttons on your own reply. This is used only to answer that command.</li>
+<li><strong>Minecraft player data.</strong> To answer a command, the bot looks up the requested player's public Hypixel and Mojang data. This data is cached in memory for up to 5 minutes to avoid repeated requests, then discarded. A bot restart clears it.</li>
+<li><strong>Anonymous lookups.</strong> When you leave the name empty, the username you type into the popup is used only to fetch the stats. It is not shown in the reply and not stored. Buttons on the reply refer to the player through a random token kept in memory.</li>
+<li><strong>Error logs.</strong> If something goes wrong, technical error details may be written to the server's logs to fix the problem. These are kept briefly and not shared.</li>
+</ul>
+
+<h2>Third-party services</h2>
+<p>To answer commands, the bot contacts Discord, the Hypixel API (through our own proxy), Mojang's username services, and public sources for item prices and game data. These services have their own privacy policies.</p>
+
+<h2>Sharing</h2>
+<p>We don't sell, share or use your data for advertising or tracking.</p>
+
+<h2>Children</h2>
+<p>The bot is meant for people old enough to use Discord under Discord's own age requirements.</p>
+
+<h2>Your choices</h2>
+<p>Since no personal data is stored, there's nothing to delete. You can stop using the bot or remove it from your server at any time. If you have questions or concerns, open an issue on <a href="https://github.com/Poligoning/generic-skyblock-bot/issues">GitHub</a>.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy and will change the date above when we do.</p>
+<footer>Not affiliated with Hypixel, Mojang or Microsoft. · <a href="https://github.com/Poligoning/generic-skyblock-bot/blob/main/LICENSE">MIT License</a></footer>
+</main>
+</body>
+</html>
