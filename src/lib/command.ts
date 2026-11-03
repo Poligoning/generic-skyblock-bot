@@ -1,6 +1,8 @@
 import { randomBytes } from "node:crypto";
 import {
   ActionRowBuilder,
+  ApplicationIntegrationType,
+  InteractionContextType,
   LabelBuilder,
   ModalBuilder,
   TextInputBuilder,
@@ -100,6 +102,8 @@ export function playerCommand(spec: PlayerCommandSpec): Command & { spec: Player
   let builder: SlashCommandOptionsOnlyBuilder = new SlashCommandBuilder()
     .setName(spec.name)
     .setDescription(spec.description)
+    .setIntegrationTypes(ApplicationIntegrationType.GuildInstall, ApplicationIntegrationType.UserInstall)
+    .setContexts(InteractionContextType.Guild, InteractionContextType.BotDM, InteractionContextType.PrivateChannel)
     .addStringOption((o) => o.setName("name").setDescription("Minecraft username (leave empty for an anonymous lookup)").setMinLength(1).setMaxLength(36))
     .addStringOption((o) => o.setName("profile").setDescription("Profile name (defaults to the selected one)").setMaxLength(32).setAutocomplete(true));
   if (spec.extraOptions) builder = spec.extraOptions(builder);
