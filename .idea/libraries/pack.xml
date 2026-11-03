@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="pack">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/data/pack/neu-repo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/data/pack/client.jar!/" />
+      <root url="jar://$PROJECT_DIR$/data/pack/97.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

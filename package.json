@@ -1,0 +1,26 @@
+{
+  "name": "generic-skyblock-bot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx --env-file=.env src/index.ts",
+    "deploy": "tsx --env-file=.env src/deploy.ts",
+    "preview": "tsx --env-file=.env src/preview.ts",
+    "typecheck": "tsc --noEmit",
+    "emojis": "tsx --env-file=.env scripts/upload-emojis.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "discord.js": "^14.28.0",
+    "prismarine-nbt": "^2.8.0",
+    "skyhelper-networth": "^2.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "minecraft-data": "^3.119.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
